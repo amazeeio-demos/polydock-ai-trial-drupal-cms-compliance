@@ -6,7 +6,7 @@
 ###################################################
 
 LOCKFILE="/app/web/sites/default/files/.polydock_post_deploy"
-APP_IMAGE_URL_DEFAULT="https://nginx.main.ai-trial-storage.us2.amazee.io/storage/compliance/app-data-image.tgz"
+APP_IMAGE_URL_DEFAULT="https://nginx.main.ai-trial-storage.us2.amazee.io/compliance/dev-starter/app-data-image.tgz"
 POLYDOCK_APP_IMAGE_FILENAME="polydock_post_deploy_image.tgz"
 POLYDOCK_TMP="/tmp/polydock_post_deploy"
 POLYDOCK_APP_IMAGE_DB_FILENAME="/app/web/sites/default/files/polydock/db-image"

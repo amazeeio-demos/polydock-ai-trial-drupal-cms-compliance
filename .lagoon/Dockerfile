@@ -11,7 +11,6 @@ COPY .lagoon /app/.lagoon
 RUN /lagoon/entrypoints/999-drupal-cms-scaffold.sh
 RUN mkdir -p -v -m775 /app/web/sites/default/
 
-
 # Define where the Drupal Root is located
 ENV WEBROOT=web
 
@@ -22,7 +21,8 @@ COPY --from=cli /app /app
 ENV WEBROOT=web
 
 FROM uselagoon/php-8.4-fpm:latest AS php
- 
+
 COPY --from=cli /app /app
+
 # php-fpm needs to have the composer binary and rsync available
 COPY --from=cli /usr/local/bin/composer /usr/local/bin/composer

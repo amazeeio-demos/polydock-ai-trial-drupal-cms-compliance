@@ -15,11 +15,11 @@
         }
     },
     "require": {
-        "amazeeio/drupal_integrations": "^0.4",
+        "amazeeio/drupal_integrations": "^0.5",
         "cweagans/composer-patches": "^2",
-        "drupal/amazeeio_ckeditor_widgets": "1.0.x-dev",
-        "drupal/ai_provider_amazeeio_recipe": "^1.0@beta",
-        "drupal/cms": "^1.0.2",
+        "drupal/amazeeio_ckeditor_widgets": "^1.0",
+        "drupal/ai_provider_amazeeio_recipe": "^1.1",
+        "drupal/cms": "^1.2.4",
         "drupal/lagoon_logs": "^3.0"
     },
     "conflict": {
@@ -30,12 +30,14 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-recipe-unpack": true,
+            "drupal/core-vendor-hardening": true,
             "php-http/discovery": true,
-            "cweagans/composer-patches": true
+            "phpstan/extension-installer": true
         },
         "sort-packages": true,
         "optimize-autoloader": true
